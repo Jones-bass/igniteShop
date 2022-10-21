@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import { globalCss } from "../styles";
+import { globalStyles } from "../styles/global";
 
 import logoImg from "../assets/logo.svg"
 import Image from "next/future/image"
@@ -7,7 +7,7 @@ import Image from "next/future/image"
 import { Container, Header } from "../styles/pages/app"
 
 export default function App({ Component, pageProps }: AppProps) {
-  globalCss();
+  globalStyles();
   
   return (
     <Container>
